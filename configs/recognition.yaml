@@ -1,0 +1,33 @@
+# Configuration for IAM-line Handwriting Recognition Model (CRNN + CTC)
+
+dataset:
+  name: "Teklia/IAM-line"
+  image_column: "image"
+  text_column: "text"
+
+preprocessing:
+  target_height: 32
+  min_width: 32
+  normalize_range: [0.0, 1.0]  # Pixel values scaled to [0.0, 1.0]
+  invert_colors: true          # Invert so ink strokes are positive signal (high intensity)
+  apply_augmentation: true     # Apply gentle data augmentation during training
+
+model:
+  in_channels: 1
+  cnn_channels: [64, 128, 256, 256, 512, 512, 512]
+  lstm_hidden_size: 256
+  lstm_num_layers: 2
+  lstm_dropout: 0.2
+
+training:
+  batch_size: 16
+  learning_rate: 0.0005
+  weight_decay: 0.00001
+  epochs: 10
+  seed: 42
+  early_stopping_patience: 3
+
+checkpoint:
+  dir: "models/checkpoints"
+  filename: "iam_crnn_best.pt"
+  vocab_filename: "iam_vocab.json"

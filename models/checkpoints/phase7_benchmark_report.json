@@ -1,0 +1,111 @@
+{
+  "iam_train_sample": {
+    "ground_truth": "if",
+    "prediction": "At",
+    "confidence": 0.4745192229747772,
+    "cer": 1.0,
+    "wer": 1.0,
+    "latency_ms": 392.18664169311523
+  },
+  "iam_validation_samples": {
+    "mean_cer": 0.12833333333333333,
+    "mean_wer": 0.4,
+    "mean_latency_ms": 22.406792640686035,
+    "exact_match_rate": 0.6,
+    "samples": [
+      {
+        "gt": "the",
+        "pred": "the",
+        "cer": 0.0,
+        "match": true
+      },
+      {
+        "gt": "boat",
+        "pred": "bet",
+        "cer": 0.5,
+        "match": false
+      },
+      {
+        "gt": "will",
+        "pred": "will",
+        "cer": 0.0,
+        "match": true
+      },
+      {
+        "gt": "now",
+        "pred": "no",
+        "cer": 0.3333333333333333,
+        "match": false
+      },
+      {
+        "gt": "take",
+        "pred": "tate",
+        "cer": 0.25,
+        "match": false
+      },
+      {
+        "gt": "shape",
+        "pred": "shpe",
+        "cer": 0.2,
+        "match": false
+      },
+      {
+        "gt": ",",
+        "pred": ",",
+        "cer": 0.0,
+        "match": true
+      },
+      {
+        "gt": "and",
+        "pred": "and",
+        "cer": 0.0,
+        "match": true
+      },
+      {
+        "gt": "this",
+        "pred": "this",
+        "cer": 0.0,
+        "match": true
+      },
+      {
+        "gt": "is",
+        "pred": "is",
+        "cer": 0.0,
+        "match": true
+      }
+    ]
+  },
+  "blank_image": {
+    "prediction": "",
+    "confidence": 0.0,
+    "hallucination": false,
+    "latency_ms": 25.927066802978516
+  },
+  "printed_text": {
+    "ground_truth": "INVOICE",
+    "prediction": "mnoos",
+    "cer": 0.7142857142857143,
+    "latency_ms": 26.16119384765625
+  },
+  "user_notebook": {
+    "prediction": "ma\nin iaesoo seaog-\nie o sud see se",
+    "lines": [
+      {
+        "line": 1,
+        "text": "ma",
+        "conf": 0.5171537697315216
+      },
+      {
+        "line": 2,
+        "text": "in iaesoo seaog-",
+        "conf": 0.5663125233517753
+      },
+      {
+        "line": 3,
+        "text": "ie o sud see se",
+        "conf": 0.5525941252708435
+      }
+    ],
+    "latency_ms": 218.9342975616455
+  }
+}

@@ -1,0 +1,36 @@
+# Web UI
+streamlit>=1.35.0
+
+# Image & PDF Processing
+opencv-python-headless>=4.9.0
+pillow>=10.3.0
+numpy>=1.26.0
+pymupdf>=1.24.0
+
+# Handwriting OCR (PyTorch CRNN + CTC)
+torch>=2.2.0
+torchvision>=0.17.0
+
+# Document Classification & Tabular Presentation
+scikit-learn>=1.4.0
+joblib>=1.3.0
+pandas>=2.2.0
+
+# Information Extraction & NLP
+spacy>=3.7.0
+
+# Database Access
+sqlalchemy>=2.0.0
+
+# PDF Report Generation & Export
+reportlab>=4.1.0
+
+# OCR Evaluation & Dataset Utilities
+jiwer>=3.0.0
+tqdm>=4.66.0
+
+# Configuration & Environment
+python-dotenv>=1.0.0
+
+# Testing
+pytest>=8.0.0
